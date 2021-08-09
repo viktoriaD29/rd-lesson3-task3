@@ -1,21 +1,11 @@
 import { SAVE_USER, REMOVE_USER } from './user.actions';
 
-// const initialStateUser = {
-//   user: null
-// }
-
 const userReducer = (state = null, action) => {
   switch (action.type) {
     case SAVE_USER:
-      return {
-        //...state,
-        user: action.payload.userData
-      };
+      return action.payload.userData
     case REMOVE_USER:
-      return {
-        //...state,
-        user: null
-      };
+      return null
     default:
       return state;
   }

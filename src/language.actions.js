@@ -1,8 +1,8 @@
-export const LANGUAGE = 'LANGUAGE'
+export const SETLANGUAGE = 'LANGUAGE/SETLANGUAGE';
 
 export const setLanguage = (lang) => {
   return {
-    type: LANGUAGE,
+    type: SETLANGUAGE,
     payload: {
       lang,
     },
