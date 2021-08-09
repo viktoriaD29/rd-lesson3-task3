@@ -10,11 +10,11 @@ store.dispatch(addProduct({ id: 2, name: 'meat' }));
 store.dispatch(addProduct({ id: 3, name: 'bread' }));
 store.dispatch(removeProduct(2));
 
-store.dispatch(setUser({ name: 'Tom' }));
-store.dispatch(setUser({ name: 'Bob' }));
-store.dispatch(setUser({ name: 'Ann' }));
+store.dispatch(setUser({ id: 5, name: 'Tom' }));
+store.dispatch(setUser({ id: 6, name: 'Bob' }));
+store.dispatch(setUser({ id: 7, name: 'Ann' }));
 store.dispatch(removeUser());
 
-store.dispatch(setLanguage({language: 'jp'}));
-store.dispatch(setLanguage({language: 'es'}));
-store.dispatch(setLanguage({language: 'ua'}));
+store.dispatch(setLanguage('jp'));
+store.dispatch(setLanguage('es'));
+store.dispatch(setLanguage('ua'));
